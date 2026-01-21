@@ -121,22 +121,7 @@ footer {
 footer p {
     margin: 5px 0;
 }
-/*div.flex-services {
-    display: flex;
-    /* Show the flex items horizontally 
-    flex-direction: row;
-  }
-  
-  div.flex-choice > div {
-    margin: 10px;
-  }
-  
-  /* Use media query and show the flex items vertically if screen width is less than 600px 
-  @media screen and (max-width:600px) {
-    div.flex-plan {
-      flex-direction: column;
-    }
-  }*/
+
 
   div.gallery {
     display: flex;
@@ -177,3 +162,56 @@ footer p {
       text-transform: uppercase;
 
   }
+
+  /* Section */
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.card {
+  background-color: #fbfafa;
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.02),
+    0 20px 40px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.05),
+    0 30px 60px rgba(0,0,0,0.8);
+}
+
+
+
+/* Text */
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #b5b5b5;
+  margin-bottom: 18px;
+}
+
+
+
+
+
+
